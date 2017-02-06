@@ -1,0 +1,35 @@
+<head>
+<title>Arma3Sync Guide - 2nd MRB</title>
+<link rel="stylesheet" type="text/css" href="../Shared Assets/styles.css">
+</head>
+<body>
+<div id="title"><br/><h1>2nd Marine Raider Battalion</h1><h2>Arma3Sync Repo Guide</h2></div>
+<div id="nav"><a href="index.html">Intro</a> - <a href="connecting.html">Connecting</a> - <a href="events.html">Events</a> - <a href="extras.html">Extras</a> - <a href="troubleshooting.html" class="red">Troubleshooting</a></div>
+
+<h2>When downloading from the repo, I get an error that says something about failing to download a file</h2>
+<p>This means that, for some reason, the files that are on the server don't match with what are supposed to be there. There are two possible explanations for this.</p>
+<p>The more likely explanation is that you've had the unfortunate timing to have tried to download from the repo while I'm still in the process of uploading an update. As such, your best action would be to wait a while (about half an hour should suffice) and try again.</p>
+<p>If it still throws the error, tell me about it and I'll investigate. Either I'm <b>still</b> updating, or I made a mistake somewhere. Either way, I'll handle it.</p>
+<h2>When starting Arma 3, I get an error that says “Addon missing dependency...” on startup</h2>
+<p>This means one of two things. Either you’re missing a mod, in which case just go through the steps to download the mods again, make sure your mod groups are complete and make sure you’ve actually selected all of them.</p>
+<p>The alternative is that it’s an issue with your load order. To fix this, go to the “Addon Options” tab. On the bottom pane you will see a list of all your mods. This is the load order; to modify it, select a mod and click the arrows on the right-hand side. You’ll want to modify it so that these mods are at the top:</p>
+<ul>
+<li>CBA_A3</li>
+<li>ASDG_JR</li>
+<li>CUP_Terrains</li>
+</ul>
+<p>The rest of it doesn’t really matter.</p>
+<h2>I keep having to restart Arma to activate BattlEye, which is irritating.</h2>
+<p>This is easily fixed. If you navigate to the “Launcher Options” tab, you’ll see there’s a box at the bottom where you can change the executable that Arma3Sync uses for the game. To launch with BattlEye, you’ll need to change this from arma3.exe to arma3battleye.exe. If the select interface drops you somewhere like My Documents to start with, you can just follow the path that’s already written in the box to find your Arma 3 folder (and the executable file you’re looking for).</p>
+<p>However once you’ve changed that to arma3battleye.exe, it won’t work just yet. In the box marked “Additional Parameters”, you need to add the following:-</p>
+<p>0 1</p>
+<p>That’s a zero, then a space, then a one. Then it should work; you’ll know it’s working as a window will open up before Arma, stating that it’s starting the BattlEye service.</p>
+<h2>This is the first time I’ve installed Task Force Arrowhead Radio. </h2>
+<p>TFAR has a couple of things you need to copy to other places before you can use it, as well as some stuff you need to do to your Teamspeak.</p>
+<p>Firstly, find the Task Force Radio folder. It’ll be called @task_force_radio, and it’ll be in @_2MRB, which you should see at the top of your Arma 3 folder (if you’re sorting alphabetically). Firstly, take the “userconfig” folder and copy it to the Arma 3 folder. Secondly, there’s a folder marked “plugins”. This needs to be copied to your Teamspeak folder (merge it with the existing plugins folder), which is wherever you installed Teamspeak, usually in Program Files.</p>
+<p>Finally, you need to activate the plugin. In Teamspeak, go to Settings -> Plugins. If you had Teamspeak open when you copied the plugins over, you’ll have to click “Reload All”. Find the “Task Force Arma 3 Radio” plugin and check its box, then close the window. You’re done; enjoy having a vastly improved comms system. </p>
+
+<hr/>
+<div id="prev"><a href="extras.html">&lt;-- Previous Page</a></div>
+<br/><br/><br/>
+</body>

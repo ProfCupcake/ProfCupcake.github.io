@@ -1,0 +1,62 @@
+body
+{
+  background-color:#1a1a1a;
+  color:#c7c7c7;
+  font-family:Helvetica,sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1, h2, a
+{
+  color:#f5a00e;
+}
+
+a
+{
+  text-decoration:none;
+}
+a:hover
+{
+  text-decoration:underline;
+}
+
+#title
+{
+  height:257px;
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size: 150%;
+  font-weight:bold;
+  color:#f5a00e;
+  text-align:center;
+  background-image:url("sqd_logo_trans.png");
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#nav
+{
+  font-size: 125%;
+  text-align:center;
+}
+
+#prev
+{
+  float:left;
+}
+
+#next
+{
+  float:right;
+}
+
+.toon
+{
+  font-family:Comic Sans,cursive;
+}
+
+.red
+{
+  color:#e80e0e;
+}
