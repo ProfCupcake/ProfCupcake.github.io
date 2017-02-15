@@ -19,6 +19,9 @@
 <p>The more likely explanation is that you've had the unfortunate timing to have tried to download from the repo while I'm still in the process of uploading an update. As such, your best action would be to wait a while (about half an hour should suffice) and try again.</p>
 <p>If it still throws the error, tell me about it and I'll investigate. Either I'm <b>still</b> updating, or I made a mistake somewhere. Either way, I'll handle it.</p>
 
+<h2>After I've finished downloading, it still says there are mods to download</h2>
+<p>This means that the manifest for the files does not match the actual content of the files you downloaded. This essentially has the same explanations, and recommended actions, as the above. </p>
+
 <h2>When starting Arma 3, I get an error that says “Addon missing dependency...” on startup</h2>
 <p>This means one of two things. Either you’re missing a mod, in which case just go through the steps to download the mods again, make sure your mod groups are complete and make sure you’ve actually selected all of them.</p>
 <p>The alternative is that it’s an issue with your load order. To fix this, go to the “Addon Options” tab. On the bottom pane you will see a list of all your mods. This is the load order; to modify it, select a mod and click the arrows on the right-hand side. You’ll want to modify it so that these mods are at the top:</p>
@@ -28,6 +31,7 @@
 <li>ACE3</li>
 </ul>
 <p>The rest of it doesn’t really matter.</p>
+<p><i>(It has recently come to my attention that load order apparently doesn't matter any more? I'll have to investigate this.)</i></p>
 
 <h2>I keep having to restart Arma to activate BattlEye, which is irritating.</h2>
 <p>This is easily fixed. If you navigate to the “Launcher Options” tab, you’ll see there’s a box at the bottom where you can change the executable that Arma3Sync uses for the game. To launch with BattlEye, you’ll need to change this from arma3.exe to arma3battleye.exe. If the select interface drops you somewhere like My Documents to start with, you can just follow the path that’s already written in the box to find your Arma 3 folder (and the executable file you’re looking for).</p>
@@ -36,9 +40,9 @@
 <p>That’s a zero, then a space, then a one. Then it should work; you’ll know it’s working as a window will open up before Arma, stating that it’s starting the BattlEye service.</p>
 
 <h2>This is the first time I’ve installed Task Force Arrowhead Radio. </h2>
-<p>TFAR has a couple of things you need to copy to other places before you can use it, as well as some stuff you need to do to your Teamspeak.</p>
-<p>Firstly, find the Task Force Radio folder. It’ll be called @task_force_radio, and it’ll be in @_2MRB, which you should see at the top of your Arma 3 folder (if you’re sorting alphabetically). Firstly, take the “userconfig” folder and copy it to the Arma 3 folder. Secondly, there’s a folder marked “plugins”. This needs to be copied to your Teamspeak folder (merge it with the existing plugins folder), which is wherever you installed Teamspeak, usually in Program Files.</p>
-<p>Finally, you need to activate the plugin. In Teamspeak, go to Settings -> Plugins. If you had Teamspeak open when you copied the plugins over, you’ll have to click “Reload All”. Find the “Task Force Arma 3 Radio” plugin and check its box, then close the window. You’re done; enjoy having a vastly improved comms system. </p>
+<p>Before you can use TFAR, you need to install the plugin for Teamspeak. This used to require copying files over, but now it uses a .ts3_plugin file that does it automatically.</p>
+<p>Simply navigate to your Arma 3 directory, and in "@task_force_radio" you'll see another folder called "teamspeak". This contains the file you're looking for - just double-click it and click "install" on the window that appears.</p>
+<p>The filetype may not be associated with Teamspeak (i.e. the icon is not a TS icon, and double-clicking will open an "open with..." dialog instead). Most likely, this means you need to update Teamspeak.</p>
 </article>
 
 <hr/>
